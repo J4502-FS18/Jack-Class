@@ -33,7 +33,6 @@ li{
 }
 
 div{
-  font-style: italic;
   text-align: center;
 }
 
@@ -75,4 +74,26 @@ div{
     -ms-transform: rotate(90deg);   /* IE 9 */
     -o-transform: rotate(90deg);   /* Opera */
     transform: rotate(90deg);
+}
+
+#email{
+  font-style:italic;
+}
+
+#otheremail{
+  font-style: italic
+}
+
+#red{
+  color: red
+}
+
+#blue{
+  color: blue
+}
+
+#footer{
+  font-size: .33rem;
+  background-color: teal;
+  color: black
 }
