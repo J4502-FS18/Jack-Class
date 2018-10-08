@@ -40,13 +40,17 @@ div{
 #nav {
     padding: 0;
 	list-style-type: none;
+  display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 #nav li {
-    margin: 0;
-    padding: 0;
+    margin: 15px;
+    padding: 15px;
 	border-bottom: 1px solid #ccc;
 	text-decoration: none;
+  justify-content: space-around 30px;
 }
 
 #nav a:link, a:visited {
@@ -56,7 +60,7 @@ div{
     font-weight: bold;
     text-align:center;
     text-decoration: none;
-    padding: 4px;
+    padding: 2px;
     font-family: Helvetica, Arial, sans-serif;
 }
 
