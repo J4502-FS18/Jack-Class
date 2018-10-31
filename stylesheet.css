@@ -1,4 +1,4 @@
-html{ font-size: 100
+html{ font-size: 100%
 }
 
 body{background-color: green;
@@ -10,9 +10,15 @@ h1{font-family: 'Fredericka the Great', cursive;
   background: purple;
 }
 
+h2{font-family: 'Fredericka the Great', cursive;
+  text-align: center;
+  background: purple;
+}
+
 p{font-family: 'Merriweather Sans', sans-serif;
   text-align: center;
   color: orange;
+  max-width: 1400px;
 }
 
 img{
@@ -20,11 +26,29 @@ img{
   border: none;
 }
 
+img.flatlands{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+  width: 450px;
+  max-width: 100%;
+  max-height: 450px;
+}
+
+.media {
+   min-width: 0;
+   margin: 5px;
+}
+img {
+
+ }
 ul{
   text-align:center;
   border: 2in;
   border-color: orange;
   list-style: none;
+  display: flex;
+  max-width: 300px;
 }
 
 li{
@@ -33,8 +57,47 @@ li{
   background-color: black;
 }
 
+li.astronaut{
+  display: grid;
+}
+
 div{
   text-align: center;
+}
+
+li.flatlands{
+  display: grid;
+}
+
+.youtube{
+  display: flex;
+  justify-content: center;
+  flex-wrap:wrap;
+}
+.cards {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    grid-gap: 20px;
+    gap: 20px;
+    /*grid-column-gap: 10px;
+    grid-row-gap: 25px; */
+}
+
+.cards li {
+    background-color: blue;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+p.flatlands{
+  height: 300px;
+  width:500px;
+  display: flex;
 }
 
 #nav {
@@ -43,6 +106,7 @@ div{
   display: flex;
 flex-direction: row;
 flex-wrap: wrap;
+display: grid
 }
 
 #nav li {
@@ -50,7 +114,7 @@ flex-wrap: wrap;
     padding: 15px;
 	border-bottom: 1px solid #ccc;
 	text-decoration: none;
-  justify-content: space-around 30px;
+
 }
 
 #nav a:link, a:visited {
@@ -74,7 +138,7 @@ flex-wrap: wrap;
 }
 
 #picture{
-  style="width:100%;text-align:center;" webkit-transform: rotate(90deg); /* Safari and Chrome */
+  style="width:100%;" /* Safari and Chrome */
     -moz-transform: rotate(90deg);   /* Firefox */
     -ms-transform: rotate(90deg);   /* IE 9 */
     -o-transform: rotate(90deg);   /* Opera */
